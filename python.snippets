@@ -779,4 +779,42 @@ snippet pmdoc "pocoo style module doc string" b
 $0
 endsnippet
 
+snippet loadcp 
+# author: https://codeforces.com/profile/krishnachandran
+# text-editor: NVIM v0.9.1
+# compiler: PyPy 3.9.10 (7.3.9, 64 bit)
+
+from sys import stdin, stdout
+from collections import Counter
+import heapq
+from typing import List, Tuple
+
+BRIGHTYELLOW = "\033[1;93m"
+RESETCOLOR = "\033[0m"
+
+def dbg(x):
+    stdout.write(BRIGHTYELLOW + f"\n{x}" + RESETCOLOR)
+    return
+
+def solve():
+   	 $0 
+    return
+
+def tst(test_cases):
+    tst = 1
+    if(test_cases):
+        tst = int(stdin.readline())
+    while tst > 0:
+        solve()
+        tst = tst - 1
+    return
+
+def main():
+    tst(True)
+    return
+
+if __name__ == "__main__":
+    main()
+endsnippet
+
 # vim:ft=snippets:
